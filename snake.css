@@ -1,33 +1,56 @@
 *{
 	padding:0;
 	margin: 0;
-}
-
-
-body{
-	background-color: black;
-}
-
-td{
-	width:20px;
-	height:20px;
-}
-
-
-
-.blank{
-	background-color:blank;
-
-}
-
-.snake{
-	background-color: white;
-}
-
-.wall {
-	background-color: green;
-}
-
-.fruit{
-	background-color: red;
+} 
+ 
+h1{ 
+    font: normal 20px monospace; 
+    color: #a9b7c6; 
+} 
+ 
+body{ 
+    background-color: #2b2b2b; 
+} 
+ 
+.snake-alive{ 
+    background-color: #a9b7c6; 
+    width: 20px; 
+    height: 20px; 
+} 
+ 
+.wall{ 
+    background-color: #CC7832; 
+    width: 20px; 
+    height: 20px; 
+} 
+ 
+.blank{ 
+    background-color: #2b2b2b; 
+    width: 20px; 
+    height: 20px; 
+} 
+ 
+.fruit{ 
+    background-color: #6897bb; 
+    width: 20px; 
+    height: 20px; 
+} 
+ 
+hr{ 
+    color: #a9b7c6; 
+    line-height: 1px; 
+} 
+ 
+a{ 
+    color: #a9b7c6; 
+    font: normal 15px monospace; 
+    text-decoration: none; 
+    padding: 0 4px 0 4px; 
+    margin: 6px; 
+    transition: 0.5s; 
+    display: inline; 
+} 
+ 
+a:hover{ 
+    background-color: #4b4b4b; 
 }
