@@ -1,9 +1,7 @@
+//Creating all the global Variables
 
-/** 
- * Created by EvanMerz on 2/16/17. 
- */ 
- 
-var snakeX = 2, snakeY = 2; 
+
+var snakeX = 2, snakeY = 2; //size of the snake
 var tailX = [snakeX]; 
 var tailY = [snakeY]; 
 var length = 0; 
@@ -12,18 +10,24 @@ var running = false;
 var gameOver = false; 
 var direction = -1; // up = 0, down = -1, left = 1, right = 2 
 var score = 0; 
-var width = 15; 
-var height = 15; 
+var width = 25; 
+var height = 25; 
 var interval = 100; //longer makes game slower 
 var increment = 1; 
 var int; 
+
+
  
 /** 
  * entry point of the game 
  */ 
 function run(){ 
     init(); 
-    int = setInterval(gameLoop, interval); 
+    var int = setInterval(gameLoop, interval); 
+
+    //Definition
+        //setInterval- method calls a function or evaluates an expression at a specified interval
+            //Syntax = setInterval(function,milliseconds)
 } 
  
 function init(){ 
@@ -82,6 +86,8 @@ function rand(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min; 
 } 
  
+
+
 /** 
  * sets the class of that block 
  * @param x 
@@ -93,6 +99,8 @@ function setBlock(x, y, value){
         document.getElementById(x+"-"+y).setAttribute("class", value); 
 } 
  
+
+
 /** 
  * gets the class that the block is at that x-y 
  * @param x location 
